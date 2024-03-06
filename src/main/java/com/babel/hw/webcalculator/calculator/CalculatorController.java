@@ -16,8 +16,6 @@ public class CalculatorController {
     public OperationWriter operate(@PathVariable("operacion") String operationName,
                              @RequestParam("operando1") Double operator1,
                              @RequestParam("operando2") Double operator2){
-        Operation operation = calculator.getOperation(operationName);
-        Double result = operation.calculate(operator1,operator2);
-        return new OperationWriter(operationName, operator1, operator2, result);
+        return  calculator.calculate(operationName,operator1,operator2);
     }
 }

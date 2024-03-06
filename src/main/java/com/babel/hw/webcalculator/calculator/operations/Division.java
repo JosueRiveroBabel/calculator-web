@@ -13,7 +13,7 @@ public class Division implements Operation{
 
     @Override
     public String description() {
-        return "divison";
+        return "division";
     }
 
     @Override
