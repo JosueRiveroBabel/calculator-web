@@ -27,7 +27,7 @@ public class Calculator {
             return operation;
         }
         else {
-            return null;
+            throw new IllegalArgumentException("Operacion no soportada");
         }
     }
 
